@@ -1,0 +1,22 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+    <div class="row top-row">
+        <div class="col l8 m8 s12 push-l2 push-m2 center">
+            <form method="post" id="loc-form">
+                {% csrf_token %}
+                <input type="text" name="loc_latitude" id="loc-latitude" hidden>
+                <input type="text" name="loc_longitude" id="loc-longitude" hidden>
+                <button id="help-me" class="btn white blue-text darken-4 z-depth-2">
+                    <i class="material-icons left">phone</i>HELP ME!
+                </button>
+            </form>
+            <div class="card-panel blue darken-4 white-text">
+                <em><p id="help-text"></p></em>
+                <b><h5 id="data-text"></h5></b>
+                <h6 id="coord-lat"></h6>
+                <h6 id="coord-lon"></h6>
+            </div>
+        </div>
+    </div>
+{% endblock %}
