@@ -22,6 +22,11 @@ The project idea was to extract nearby location of Mr. X phone call request. We 
 11. Click the **HELP ME!** button to get the address.
 12. You can terminate the server anytime by **CTRL+c**.
 
+### URL's I've implemented:
+* /
+* /help-me/
+* /api/v1/seekers/
+
 ### API's used to get the informations:
 1. **For IP Address:** https://www.ipify.org/
 2. **For Location Coordinates:** https://ipapi.co/
